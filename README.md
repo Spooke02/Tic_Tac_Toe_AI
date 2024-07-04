@@ -11,9 +11,13 @@ Consider the graph diagram below:
 Say that we have a state that looks like the topmost (root) board, and it is the computer’s turn (Player O). The computer will aim to minimize the score as much as possible.
 
 There are 3 moves available for the computer: top-right, middle-left and bottom-left.
+
 After playing each of these moves, the computer will evaluate the possible moves of the user (Player X). The algorithm will recurse for the temporary updated state.
+
 If the board is at a terminal state (orangish box), then it will return a specific value: 1 if X wins; -1 if O wins; and 0 if it’s a tie.
+
 When the algorithm is evaluating the user’s (Player X’s) play, then it will maximize score — best move the user can play. When the algorithm is evaluating the computer’s (Player O’s) play, then it will minimize the score.
+
 In the above example, at the root level, the 3 possible moves determine the score of a particular action. Playing top-right would result a +1 in the worst case. Playing middle-left would result a -1 in the worst case. Playing bottom-left would result a 0 in the worst case.
 
 Since the computer is trying to minimize its score, it will choose to play the middle-left cell since it is the best play. In this case, the computer will win the game in the worst case. This is the Minimax Algorithm.
