@@ -21,3 +21,78 @@ Say that we have a state that looks like the topmost (root) board, and it is the
 In the above example, at the root level, the 3 possible moves determine the score of a particular action. Playing top-right would result a +1 in the worst case. Playing middle-left would result a -1 in the worst case. Playing bottom-left would result a 0 in the worst case.
 
 Since the computer is trying to minimize its score, it will choose to play the middle-left cell since it is the best play. In this case, the computer will win the game in the worst case. This is the Minimax Algorithm.
+
+# OUTPUT
+
+|------- WELCOME TO TIC TAC TOE -----------|
+You are X while the Computer is O
+
+
+It is your turn
+
+Enter the x-coordinate [0-2]: 0
+Enter the y-coordinate [0-2]: 0
+X _ _ 
+_ _ _ 
+_ _ _ 
+
+
+The computer is playing its turn
+X _ _ 
+_ O _ 
+_ _ _ 
+
+
+It is your turn
+
+Enter the x-coordinate [0-2]: 0
+Enter the y-coordinate [0-2]: 1
+X X _ 
+_ O _ 
+_ _ _ 
+
+
+The computer is playing its turn
+X X O 
+_ O _ 
+_ _ _ 
+
+
+It is your turn
+
+Enter the x-coordinate [0-2]: 2
+Enter the y-coordinate [0-2]: 0
+X X O 
+_ O _ 
+X _ _ 
+
+
+The computer is playing its turn
+X X O 
+O O _ 
+X _ _ 
+
+
+It is your turn
+
+Enter the x-coordinate [0-2]: 1
+Enter the y-coordinate [0-2]: 2
+X X O 
+O O X 
+X _ _ 
+
+
+The computer is playing its turn
+X X O 
+O O X 
+X O _ 
+
+
+It is your turn
+
+Enter the x-coordinate [0-2]: 2
+Enter the y-coordinate [0-2]: 2
+X X O 
+O O X 
+X O X 
+It's a tie.
